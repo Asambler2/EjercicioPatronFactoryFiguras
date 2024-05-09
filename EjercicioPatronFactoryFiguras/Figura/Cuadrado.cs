@@ -10,7 +10,17 @@ namespace EjercicioPatronFactoryFiguras.Figura
     {
         public IVisualizable Visor { get; set; }
         public int lado;
-        public string Figura = "Cuadrado";
+        public string Figura { get; set; } = "Cuadrado";
+
+        public Cuadrado(int valor)
+        {
+            this.lado = valor;
+        }
+
+        public string GetFigura()
+        {
+            return Figura;
+        }
 
         public double DamePerimetro()
         {

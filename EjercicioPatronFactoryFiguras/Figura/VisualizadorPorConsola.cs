@@ -10,7 +10,7 @@ namespace EjercicioPatronFactoryFiguras.Figura
     {
         public string Visualizalo(IMedible figura)
         {
-            Console.WriteLine($"Tiene una superficie de: {figura.DamePerimetro()} y un área de {figura.DameSuperficie()}");
+            Console.WriteLine($"Tiene una superficie de: {Math.Round(figura.DamePerimetro(), 2)} y un área de {Math.Round(figura.DameSuperficie(), 2)} y es un {figura.GetFigura()}");
             return "";
         }
     }

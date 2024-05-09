@@ -8,6 +8,7 @@ namespace EjercicioPatronFactoryFiguras.Figura
 {
     public interface IMedible
     {
+        public string GetFigura();
         public double DamePerimetro();
         public double DameSuperficie();
     }

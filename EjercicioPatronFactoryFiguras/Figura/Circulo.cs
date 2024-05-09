@@ -10,7 +10,17 @@ namespace EjercicioPatronFactoryFiguras.Figura
     {
         public IVisualizable Visor { get; set; }
         public int radio;
-        public string Figura = "Circulo";
+        public string Figura { get; set; } = "Circulo";
+
+        public Circulo(int valor)
+        {
+            this.radio = valor;
+        }
+
+        public string GetFigura()
+        {
+            return Figura;
+        }
 
         public double DamePerimetro()
         {

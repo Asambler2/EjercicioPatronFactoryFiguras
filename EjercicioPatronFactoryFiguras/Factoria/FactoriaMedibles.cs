@@ -12,8 +12,8 @@ namespace EjercicioPatronFactoryFiguras.Factoria
         {
             switch(figura)
             {
-                case EnumFigura.Circulo: return new EjercicioPatronFactoryFiguras.Figura.Circulo();
-                case EnumFigura.Cuadrado: return new EjercicioPatronFactoryFiguras.Figura.Cuadrado();
+                case EnumFigura.Circulo: return new EjercicioPatronFactoryFiguras.Figura.Circulo(valor);
+                case EnumFigura.Cuadrado: return new EjercicioPatronFactoryFiguras.Figura.Cuadrado(valor);
                 default: return null;
             }
         }
