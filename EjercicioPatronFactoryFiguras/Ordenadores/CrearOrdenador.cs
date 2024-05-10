@@ -28,7 +28,7 @@ namespace EjercicioPatronFactoryFiguras.Ordenadores
                 Comando = int.Parse(Console.ReadLine());
                 IVendible Ordenador = FactoriaOrdenadores.DameOrdenador(Comando, new ValidadorOrdenadorClase(), Precio, Garantia);
                 Ordenadores.Add(Ordenador);
-                Ordenador.ToString();
+                Ordenador.Listado();
                 Ordenadores.ToString();
                 this.Crear();
             }
