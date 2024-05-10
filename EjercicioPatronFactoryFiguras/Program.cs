@@ -1,6 +1,8 @@
 ﻿
 using EjercicioPatronFactoryFiguras.Figura;
 using EjercicioPatronFactoryFiguras.Factoria;
+using EjercicioPatronFactoryFiguras.Ordenadores;
+using EjercicioPatronFactoryFiguras.OrdenadorFactoria;
 
 
 IFactoriaMedibles FactoriaFiguras = new FactoriaMedibles();
@@ -20,3 +22,16 @@ Console.WriteLine($"Perímetro del circulo: {Math.Round(figuraCirculo.DamePerime
 (figuraCuadrado as Cuadrado).Visor = new VisualizadorPorConsola();
 
 (figuraCuadrado as Cuadrado).ToString();
+
+ColeccionFiguras Coleccion = new();
+Coleccion.ToString();
+
+Coleccion.AddNuevaFigura(figuraCuadrado);
+Coleccion.ToString();
+Coleccion.AddNuevaFigura(figuraCirculo);
+Coleccion.ToString();
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CrearOrdenador Crear = new CrearOrdenador();
+Crear.Crear();

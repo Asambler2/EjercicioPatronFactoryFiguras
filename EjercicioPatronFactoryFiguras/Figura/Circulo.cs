@@ -24,11 +24,11 @@ namespace EjercicioPatronFactoryFiguras.Figura
 
         public double DamePerimetro()
         {
-            return 2 * Math.PI * radio;
+            return 2 * Math.Round(Math.PI * radio, 2);
         }
         public double DameSuperficie()
         {
-            return Math.PI * radio * radio;
+            return Math.Round(Math.PI * radio * radio, 2);
         }
 
         public override string ToString()

@@ -15,7 +15,7 @@ namespace EjercicioPatronFactoryFiguras.Figura
         public double MediaSuperficie { get; set; }
         public double MediaPerimetro { get; set; }
         public double MaxFigura { get; set; }
-        public double MinFigura { get; set; }
+        public double MinFigura { get; set; } = 999999999;
         public void AddNuevaFigura(IMedible Figura)
         {
             ListaFiguras.Add (Figura);
@@ -33,6 +33,12 @@ namespace EjercicioPatronFactoryFiguras.Figura
                 if (this.MaxFigura < Figura.DameSuperficie()) this.MaxFigura = Figura.DameSuperficie();
                 if (this.MinFigura > Figura.DameSuperficie()) this.MinFigura = Figura.DameSuperficie();
             }
+        }
+        public override string ToString()
+        {
+            Console.WriteLine($"MAX: {this.MaxFigura} MIN: {this.MinFigura} TOTAL: {this.TotalFiguras} TOTAL SUPERFICIE: {this.TotalSuperficie}" +
+                    $" TOTAL PERIMETRO: {this.TotalPerimetro} MEDIA PERIMETRO: {this.MediaPerimetro} MEDIA SUPERFICIE: {this.MediaSuperficie}");
+            return "";
         }
     }
 }
