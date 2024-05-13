@@ -55,5 +55,16 @@ namespace EjercicioPatronFactoryFiguras.WDidcografica.FactoriaCanciones
                 }
             }
         }
+
+        public IReproducible DameReproducible(int tipo, IValidadorReproducibles Validador, int Duracion, string Titulo, int Canon)
+        {
+            if (Validador.EsValido(Duracion))
+            {
+                return new RepConCanon(Duracion, Titulo, Canon);
+            }else
+            {
+                return new RepConCanon();
+            }
+        }
     }
-}
+}   
