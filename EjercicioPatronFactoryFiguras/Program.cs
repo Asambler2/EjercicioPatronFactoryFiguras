@@ -3,6 +3,7 @@ using EjercicioPatronFactoryFiguras.Figura;
 using EjercicioPatronFactoryFiguras.Factoria;
 using EjercicioPatronFactoryFiguras.Ordenadores;
 using EjercicioPatronFactoryFiguras.OrdenadorFactoria;
+using EjercicioPatronFactoryFiguras.WDidcografica.Menu;
 
 
 IFactoriaMedibles FactoriaFiguras = new FactoriaMedibles();
@@ -35,3 +36,8 @@ Coleccion.ToString();
 
 CrearOrdenador Crear = new CrearOrdenador();
 Crear.Crear();
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+MenuCreacionLista Menu = new MenuCreacionLista();
+Menu.CreacionLista();
