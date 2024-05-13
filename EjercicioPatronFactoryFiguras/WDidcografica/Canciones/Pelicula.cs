@@ -18,8 +18,8 @@ namespace EjercicioPatronFactoryFiguras.WDidcografica.Canciones
         }
         public string mostrar()
         {
-            Console.WriteLine($"El título es {this.Titulo} con duracion {this.Duracion} y es del tipo {this.GetType()} ");
-            return "$\"El título es {this.Titulo} con duracion {this.Duracion} y es del tipo {this.GetType()} \"";
+            Console.WriteLine($"El título es {this.Titulo} con duracion {this.Duracion} y es del tipo {this.GetType().ToString().Replace("EjercicioPatronFactoryFiguras.WDidcografica.Canciones.", "")} ");
+            return $"El título es {this.Titulo} con duracion {this.Duracion} y es del tipo {this.GetType().ToString().Replace("EjercicioPatronFactoryFiguras.WDidcografica.Canciones.", "")} ";
         }
     }
 }
